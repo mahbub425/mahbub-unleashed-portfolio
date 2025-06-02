@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -18,14 +19,14 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 shadow-lg">
+    <header className="bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">MI</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Mahbub Islam</span>
+            <span className="text-xl font-bold text-white">Mahbub Islam</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,8 +35,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                className={`text-sm font-medium transition-colors hover:text-cyan-400 ${
+                  isActive(item.href) ? "text-cyan-400" : "text-gray-300"
                 }`}
               >
                 {item.name}
@@ -43,7 +44,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0">
             <Link to="/contact">Get In Touch</Link>
           </Button>
 
@@ -51,7 +52,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden text-gray-300 hover:text-white hover:bg-gray-800"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -61,13 +62,13 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900 border-t border-gray-800">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-blue-600 ${
-                    isActive(item.href) ? "text-blue-600" : "text-gray-700"
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-cyan-400 ${
+                    isActive(item.href) ? "text-cyan-400" : "text-gray-300"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -75,7 +76,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild className="w-full">
+                <Button asChild className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0">
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                     Get In Touch
                   </Link>
