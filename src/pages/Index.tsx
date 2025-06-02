@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -42,17 +41,20 @@ const Index = () => {
     {
       title: "Digital Transformation Strategy",
       description: "Led organization-wide digital transformation initiative",
-      category: "Organization Development"
+      category: "Organization Development",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
     },
     {
       title: "Marketing Automation Platform",
       description: "Implemented comprehensive marketing automation solution",
-      category: "Digital Marketing"
+      category: "Digital Marketing",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop"
     },
     {
       title: "Career Development Program",
       description: "Designed and executed career development framework",
-      category: "HR & Development"
+      category: "HR & Development",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop"
     }
   ];
 
@@ -61,43 +63,30 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-20 pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Hi, I'm{" "}
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Md Mahbub Ul Islam
-                  </span>
-                </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Organization Development (OD) Specialist, Digital Marketer & Tech Enthusiast
-                  passionate about driving growth and innovation.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  <Link to="/contact">
-                    Contact Me <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                </Button>
-              </div>
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                Hi, I'm{" "}
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Md Mahbub Ul Islam
+                </span>
+              </h1>
+              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Organization Development (OD) Specialist, Digital Marketer & Tech Enthusiast
+                passionate about driving growth and innovation.
+              </p>
             </div>
-
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full opacity-20 animate-pulse"></div>
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="Md Mahbub Ul Islam"
-                  className="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
-                />
-              </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                <Link to="/contact">
+                  Contact Me <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg">
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </Button>
             </div>
           </div>
         </div>
@@ -184,15 +173,15 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {services.map((service, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="h-6 w-6 text-white" />
+              <Card key={index} className="text-center hover:shadow-xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-gray-50 group">
+                <CardHeader className="pb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-lg">{service.title}</CardTitle>
+                  <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{service.description}</CardDescription>
+                  <CardDescription className="text-gray-600">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -218,15 +207,24 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {projects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-white group overflow-hidden">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm shadow-lg">
+                      {project.category}
+                    </Badge>
+                  </div>
+                </div>
                 <CardHeader>
-                  <Badge variant="outline" className="w-fit mb-2">
-                    {project.category}
-                  </Badge>
-                  <CardTitle>{project.title}</CardTitle>
+                  <CardTitle className="group-hover:text-blue-600 transition-colors">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className="text-gray-600">{project.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}

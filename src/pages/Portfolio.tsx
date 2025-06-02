@@ -37,7 +37,7 @@ const Portfolio = () => {
       team: "8 members",
       impact: "200% lead increase",
       technologies: ["Marketing Automation", "CRM Integration", "Analytics", "Email Marketing"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
       results: [
         "200% increase in qualified leads",
         "150% improvement in email open rates",
@@ -161,22 +161,25 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 cursor-pointer group">
+              <Card key={index} className="hover:shadow-2xl transition-all duration-300 cursor-pointer group border-0 bg-white overflow-hidden">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <Badge variant="secondary">{project.category}</Badge>
+                    <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm shadow-lg border-0">
+                      {project.category}
+                    </Badge>
                   </div>
                 </div>
-                <CardHeader>
+                <CardHeader className="pb-4">
                   <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
                     {project.title}
                   </CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className="line-clamp-2">{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -196,14 +199,14 @@ const Portfolio = () => {
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs">
+                        <Badge key={techIndex} variant="outline" className="text-xs border-gray-200">
                           {tech}
                         </Badge>
                       ))}
                     </div>
                     <Button 
                       variant="outline" 
-                      className="w-full"
+                      className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors"
                       onClick={() => setSelectedProject(project)}
                     >
                       View Details <ExternalLink className="ml-2 h-4 w-4" />
