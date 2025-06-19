@@ -169,6 +169,7 @@ const Index = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
       {/* Hero Section */}
       <ScrollFadeIn>
@@ -177,23 +178,34 @@ const Index = () => {
           <div className="text-center space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 700 }}>
+=======
+    <div className="min-h-screen bg-gray-900">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-20 pb-32">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   Md Mahbub Ul Islam
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
                 Organization Development (OD) Specialist, Digital Marketer & Tech Enthusiast
                 passionate about driving growth and innovation.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              <Button asChild size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0 shadow-lg shadow-cyan-500/25">
                 <Link to="/contact">
                   Contact Me <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
+<<<<<<< HEAD
               <Button asChild variant="outline" size="lg">
                 <a
                   href="https://drive.google.com/file/d/1gDNOfFpCihjUbiHfOxc0vnoL8WbKvvvv/view?usp=sharing"
@@ -203,6 +215,11 @@ const Index = () => {
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </a>
+=======
+              <Button variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white">
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
               </Button>
             </div>
           </div>
@@ -211,6 +228,7 @@ const Index = () => {
       </ScrollFadeIn>
 
       {/* About Preview */}
+<<<<<<< HEAD
       <ScrollFadeIn direction="up">
       <section className="py-24 bg-white" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -280,17 +298,64 @@ const Index = () => {
                 </li>
               </ul>
               <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+=======
+      <section className="py-20 bg-[#f8f9fa]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-gray-900">About Me</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                With extensive experience in Organization Development, Digital Marketing, and Technology,
+                I help professionals and organizations achieve their goals through strategic planning
+                and innovative solutions.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                My passion lies in empowering individuals to advance their careers and helping
+                businesses transform through digital innovation and organizational excellence.
+              </p>
+              <Button asChild className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
                 <Link to="/about">
                   Learn More About Me <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
+<<<<<<< HEAD
+=======
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-gray-900">Experience Summary</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2"></div>
+                  <div>
+                    <h4 className="font-medium text-gray-900">Organization Development</h4>
+                    <p className="text-gray-600">5+ years in organizational transformation</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-blue-500 rounded-full mt-2"></div>
+                  <div>
+                    <h4 className="font-medium text-gray-900">Digital Marketing</h4>
+                    <p className="text-gray-600">Expert in digital strategy and campaigns</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2"></div>
+                  <div>
+                    <h4 className="font-medium text-gray-900">Career Consulting</h4>
+                    <p className="text-gray-600">Helped 100+ professionals advance careers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
           </div>
         </div>
       </section>
       </ScrollFadeIn>
 
       {/* Skills Section */}
+<<<<<<< HEAD
       <ScrollFadeIn direction="up">
       <section className="py-20 bg-gradient-to-br from-blue-100 via-white to-purple-100" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
@@ -306,6 +371,21 @@ const Index = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 justify-items-center w-full">
             {skillProgress.map((skill, idx) => (
               <CircularSkill key={skill.name} percent={skill.percent} name={skill.name} />
+=======
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Skills & Expertise</h2>
+            <p className="text-lg text-gray-400">
+              Core competencies that drive results and innovation
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {skills.map((skill, index) => (
+              <Badge key={index} variant="secondary" className="px-4 py-2 text-sm bg-gray-800 text-gray-300 hover:bg-gray-700 border-gray-600">
+                {skill}
+              </Badge>
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
             ))}
           </div>
         </div>
@@ -313,6 +393,7 @@ const Index = () => {
       </ScrollFadeIn>
 
       {/* Services Section */}
+<<<<<<< HEAD
       <ScrollFadeIn direction="up">
       <section className="py-20 bg-white" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -324,11 +405,19 @@ const Index = () => {
               MY SERVICES
             </h2>
             <p className="text-lg text-gray-600">
+=======
+      <section className="py-20 bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">My Services</h2>
+            <p className="text-lg text-gray-400">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
               Professional services to accelerate your career and business growth
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
             {services.map((service, index) => (
+<<<<<<< HEAD
               <Card
                 key={index}
                 className="relative group text-center border-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden animate-fade-in-up p-6"
@@ -355,17 +444,32 @@ const Index = () => {
                   <CardDescription className="text-gray-700 text-lg px-2 font-medium" style={{fontFamily: "'Jost', sans-serif"}}>
                     {service.description}
                   </CardDescription>
+=======
+              <Card key={index} className="text-center hover:shadow-2xl transition-all duration-300 bg-gray-900 border-gray-700 group hover:border-cyan-500/50">
+                <CardHeader className="pb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/25">
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-lg text-white group-hover:text-cyan-400 transition-colors">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-gray-400">{service.description}</CardDescription>
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
                 </CardContent>
                 <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-600 to-purple-600 opacity-70 rounded-b-3xl group-hover:opacity-100 transition-opacity duration-300" />
               </Card>
             ))}
           </div>
           <div className="text-center">
+<<<<<<< HEAD
             <Button
               asChild
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0"
             >
+=======
+            <Button asChild size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white border-0">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
               <Link to="/services">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -376,6 +480,7 @@ const Index = () => {
       </ScrollFadeIn>
 
       {/* Featured Projects */}
+<<<<<<< HEAD
       <ScrollFadeIn direction="up">
       <section className="py-20 bg-gray-50" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -387,39 +492,52 @@ const Index = () => {
               FEATURED PROJECTS
             </h2>
             <p className="text-lg text-gray-600">
+=======
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Featured Projects</h2>
+            <p className="text-lg text-gray-400">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
               Showcasing impactful work and successful implementations
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {projects.map((project, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 bg-white group overflow-hidden">
+              <Card key={index} className="hover:shadow-2xl transition-all duration-300 bg-gray-800 border-gray-700 group overflow-hidden hover:border-cyan-500/50">
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm shadow-lg">
+                    <Badge variant="secondary" className="bg-gray-900/90 backdrop-blur-sm shadow-lg text-gray-300 border-gray-600">
                       {project.category}
                     </Badge>
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="group-hover:text-blue-600 transition-colors">{project.title}</CardTitle>
+                  <CardTitle className="text-white group-hover:text-cyan-400 transition-colors">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-gray-600">{project.description}</CardDescription>
+                  <CardDescription className="text-gray-400">{project.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
           </div>
+<<<<<<< HEAD
           <div className="text-center mt-12">
             <Button
               asChild
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0"
             >
+=======
+          <div className="text-center">
+            <Button asChild variant="outline" size="lg" className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-cyan-500">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
               <Link to="/portfolio">
                 View All Projects <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -430,8 +548,12 @@ const Index = () => {
       </ScrollFadeIn>
 
       {/* Contact CTA */}
+<<<<<<< HEAD
       <ScrollFadeIn direction="up">
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 500 }}>
+=======
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-700 text-white">
+>>>>>>> f786f52c8473aeaf9e264635c712fafc16a7b2f5
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold uppercase mb-4" style={{ fontFamily: "'Jost', sans-serif", fontWeight: 700 }}>
             READY TO TRANSFORM YOUR CAREER?
@@ -439,7 +561,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90">
             Let's discuss how I can help you achieve your professional goals
           </p>
-          <Button asChild size="lg" variant="secondary">
+          <Button asChild size="lg" variant="secondary" className="bg-white text-gray-900 hover:bg-gray-100">
             <Link to="/contact">
               Get Started Today <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
