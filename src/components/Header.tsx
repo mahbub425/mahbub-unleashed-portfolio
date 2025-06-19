@@ -36,7 +36,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-base font-semibold uppercase transition-colors hover:text-blue-600 ${
+                className={`text-sm font-semibold uppercase transition-colors hover:text-blue-600 ${
                   isActive(item.href) ? "text-blue-600" : "text-gray-700"
                 }`}
               >
@@ -68,7 +68,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-blue-600 ${
+                  className={`block px-3 py-2 text-sm font-medium transition-colors hover:text-blue-600 ${
                     isActive(item.href) ? "text-blue-600" : "text-gray-700"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
