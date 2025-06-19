@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -95,17 +94,17 @@ const Index = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-gray-800">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-white">About Me</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900">About Me</h2>
+              <p className="text-lg text-gray-700 leading-relaxed">
                 With extensive experience in Organization Development, Digital Marketing, and Technology,
                 I help professionals and organizations achieve their goals through strategic planning
                 and innovative solutions.
               </p>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 My passion lies in empowering individuals to advance their careers and helping
                 businesses transform through digital innovation and organizational excellence.
               </p>
@@ -116,27 +115,27 @@ const Index = () => {
               </Button>
             </div>
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-white">Experience Summary</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Experience Summary</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-medium text-white">Organization Development</h4>
-                    <p className="text-gray-400">5+ years in organizational transformation</p>
+                    <h4 className="font-medium text-gray-900">Organization Development</h4>
+                    <p className="text-gray-600">5+ years in organizational transformation</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-blue-500 rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-medium text-white">Digital Marketing</h4>
-                    <p className="text-gray-400">Expert in digital strategy and campaigns</p>
+                    <h4 className="font-medium text-gray-900">Digital Marketing</h4>
+                    <p className="text-gray-600">Expert in digital strategy and campaigns</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-cyan-400 rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-medium text-white">Career Consulting</h4>
-                    <p className="text-gray-400">Helped 100+ professionals advance careers</p>
+                    <h4 className="font-medium text-gray-900">Career Consulting</h4>
+                    <p className="text-gray-600">Helped 100+ professionals advance careers</p>
                   </div>
                 </div>
               </div>
