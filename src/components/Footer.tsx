@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Facebook, Twitter } from "lucide-react";
 
@@ -21,7 +20,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">MI</span>
               </div>
-              <span className="text-lg font-bold">Mahbub Islam</span>
+              <span className="text-lg font-bold uppercase">MD MAHBUB UL ISLAM</span>
             </div>
             <p className="text-gray-300 mb-4">
               Organization Development Specialist, Digital Marketer & Tech Enthusiast
@@ -66,14 +65,17 @@ const Footer = () => {
 
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/md-mahbub-ul-islam/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/mahbubul.isam/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.youtube.com/@SkillUpWithMahbub" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                {/* YouTube icon */}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                  <path d="M23.498 6.186a2.994 2.994 0 0 0-2.107-2.117C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.391.569A2.994 2.994 0 0 0 .502 6.186C0 8.36 0 12 0 12s0 3.64.502 5.814a2.994 2.994 0 0 0 2.107 2.117C4.772 20.5 12 20.5 12 20.5s7.228 0 9.391-.569a2.994 2.994 0 0 0 2.107-2.117C24 15.64 24 12 24 12s0-3.64-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
               </a>
             </div>
           </div>

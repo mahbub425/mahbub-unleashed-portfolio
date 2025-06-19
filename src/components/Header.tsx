@@ -25,7 +25,9 @@ const Header = () => {
             <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">MI</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Mahbub Islam</span>
+            <span className="text-xl font-bold text-gray-900 uppercase">
+              MAHBUB
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,7 +36,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                className={`text-base font-semibold uppercase transition-colors hover:text-blue-600 ${
                   isActive(item.href) ? "text-blue-600" : "text-gray-700"
                 }`}
               >
@@ -43,7 +45,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0">
             <Link to="/contact">Get In Touch</Link>
           </Button>
 
